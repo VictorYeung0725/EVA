@@ -13,6 +13,10 @@ header {
   position: relative;
 }
 
+#logo-pic {
+  width: 1rem;
+}
+
 .page-logo {
   height: 30rem;
   background-image: url(./img/banner.webp);
@@ -126,4 +130,44 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* ------------ */
+.main-container {
+  width: 60%;
+  margin: 1rem auto;
+}
+.profile {
+  width: 100%;
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.underline {
+  padding-left: 0.5rem;
+  width: 1.6rem;
+  height: 0.2rem;
+  border-bottom: 0.2rem solid black;
+}
+
+.right > img {
+  width: 1rem;
+  transform: rotate(90deg);
+}
+
+h4 {
+  color: #43593a;
+  margin-left: 1rem;
+}
+
+.profile-img > img {
+  width: 100%;
+  object-fit: cover;
 }
