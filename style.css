@@ -162,6 +162,10 @@ li.dropdown {
   transform: rotate(90deg);
 }
 
+.removeStyle {
+  text-decoration: none;
+}
+
 h4 {
   color: #43593a;
   margin-left: 1rem;
