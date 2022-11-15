@@ -53,3 +53,16 @@
 .box > * {
   padding: 1rem;
 }
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.functionality {
+  width: 90%;
+  margin: 0.2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
