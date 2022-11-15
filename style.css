@@ -13,10 +13,6 @@ header {
   position: relative;
 }
 
-#logo-pic {
-  width: 1rem;
-}
-
 .page-logo {
   height: 30rem;
   background-image: url(./img/banner.webp);
@@ -132,46 +128,117 @@ li.dropdown {
   display: block;
 }
 
-/* ------------ */
-.main-container {
-  width: 60%;
-  margin: 1rem auto;
-}
-.profile {
-  width: 100%;
-  margin: 1.5rem auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.left {
-  display: flex;
-  align-items: center;
-}
+/* ------------------------- video : */
 
-.underline {
-  padding-left: 0.5rem;
-  width: 1.6rem;
-  height: 0.2rem;
-  border-bottom: 0.2rem solid black;
-}
-
-.right > img {
-  width: 1rem;
-  transform: rotate(90deg);
-}
-
-.removeStyle {
-  text-decoration: none;
-}
-
-h4 {
-  color: #43593a;
-  margin-left: 1rem;
-}
-
-.profile-img > img {
-  width: 100%;
+.vdoContainer {
+  width: 940px;
+  height: 528.75px;
   object-fit: cover;
+  margin: 5rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+
+.vdoContainer > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  /* responsive missing */
+}
+
+
+.vdoTitle {
+  position: absolute;
+  left: 35%;
+  top: 105%;
+  color: white;
+}
+
+.playbtn {
+  position: absolute;
+  width: max-content;
+  left: 43%;
+  top: 115%;
+  background-color: #036f2a;  /* #179029 */
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid #086329;
+
+}
+.playbtn:hover {
+  background-color: #086329;  /* #07325C */
+  cursor: pointer;
+
+}
+
+.playbtnTitle {
+  margin: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playbtnTitle > img {
+  width: 10%;
+  transform: rotate(90deg);
+  margin: 0 0.8rem 0 0;
+}
+
+/* ------------------------- videoSearch : */
+
+.vdoSearchSort {
+  width: 50vw;
+  margin: 2rem 15.26rem;
+  display: flex;
+  justify-content: start;
+  
+}
+
+.zoomGlass {
+  margin: 0 1rem 0 0;
+}
+
+.searchBar {
+  border: 0;
+  font-size: 1.2rem;
+  color: #43593a;
+  width: 80%;
+}
+
+.vdoRecommand {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.vdoRecommand > img {
+  width: 19.187rem;
+  height: 10.813rem;
+  border-radius: 10px;
+  opacity: 0.86;
+}
+
+.vdoRecommand > img:hover {
+  cursor: pointer;
+  opacity: 1;
+  /* hover will have play logo appear and will play video */
+}
+
+/* .layer {
+  background-color: rgba(248, 247, 216, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
