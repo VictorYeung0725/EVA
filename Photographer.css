@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* ---------------header */
+
+/* ---------------- Main */
 
 #destinations {
   display: flex;
@@ -66,3 +69,5 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
+
+/* -----------footer */
