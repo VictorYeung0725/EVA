@@ -220,15 +220,19 @@ li.dropdown {
   gap: 10px;
 }
 
-
-.vdoRecommand > img {
+.recommandContainer{
   width: 19.187rem;
   height: 10.813rem;
-  border-radius: 10px;
-  opacity: 0.86;
+
 }
 
-.vdoRecommand > img:hover {
+.recommandContainer > img {
+  border-radius: 10px;
+  opacity: 0.86;
+  object-fit: cover;
+}
+
+.recommandContainer > img:hover {
   cursor: pointer;
   opacity: 1;
   /* hover will have play logo appear and will play video */
