@@ -13,10 +13,6 @@ header {
   position: relative;
 }
 
-#logo-pic {
-  width: 1rem;
-}
-
 .page-logo {
   height: 30rem;
   background-image: url(./img/banner.webp);
@@ -25,14 +21,15 @@ header {
 }
 
 .page-logo a {
-  margin-top: 1rem;
-  padding-left: 16rem;
   font-family: 'Oleo script', sans-serif;
   color: rgb(245, 243, 160);
-  font-size: 50px;
+  font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.page-logo a > img {
+  margin: 1rem 0 0 8rem;
 }
 
 ul {
@@ -151,9 +148,6 @@ li.dropdown {
 }
 
 .underline {
-  padding-left: 0.5rem;
-  width: 1.6rem;
-  height: 0.2rem;
   border-bottom: 0.2rem solid black;
 }
 
@@ -174,4 +168,35 @@ h4 {
 .profile-img > img {
   width: 100%;
   object-fit: cover;
+}
+
+/* ------------------------------ */
+
+.photo-container {
+  text-align: center;
+}
+
+.photo-container h1 {
+  margin: 1rem;
+}
+.photo-container h4 {
+  margin: 1rem;
+}
+
+.photo-gallery {
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+}
+
+.left > img {
+  width: 1rem;
+  transform: rotate(270deg);
+}
+
+.photo-card > img {
+  width: 16.25rem;
+}
+
+#id {
 }
