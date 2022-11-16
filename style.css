@@ -198,5 +198,6 @@ h4 {
   width: 16.25rem;
 }
 
-#id {
+#arrow {
+  z-index: 999;
 }
