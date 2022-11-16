@@ -5,10 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS -->
+  <!-- CSS: -->
   <link rel="stylesheet" href="./video.css">
-  <!-- fontawesome icon -->
+  <!-- fontawesome icon: -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha384-SOnAn/m2fVJCwnbEYgD4xzrPtvsXdElhOVvR8ND1YjB5nhGNwwf7nBQlhfAwHAZC" crossorigin="anonymous">
+  <!-- another fontawesome icon for footer: -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Google fonts: -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Junge&display=swap" rel="stylesheet">
   <title>素人眾籌</title>
 </head>
 
@@ -20,7 +27,7 @@
         <img src="./img/video_page/logo.svg" alt="website-logo">
       </a>
     </div>
-    <nav>
+    <nav class="navbar">
       <ul class="header-right">
         <li><a href="#">Home</a></li>
 
@@ -38,20 +45,45 @@
       </ul>
     </nav>
 
-    <section id="hero">
+    <!-- <section id="hero">
       <div class="hero-content">
         <a href="./index.html"><img src="./img/video_page/1.svg" alt="logo"></a>
         <h1>Videos</h1>
       </div>
-    </section>
+    </section> -->
   </header>
+
+
+  <!-- user personal profile section -->
+    <section>
+      <div class="personalProfile">
+        <div class="personalHeader">
+          <h1>Hello There,</h1>
+        </div>
+  
+        <div class="usernameStorage">
+          <div class="usernameHeader">
+            <h1>Stephen Ho</h1>
+            <p>I am Stephen Ho. I have been engaged in photography for more than 10 years, and I have taken thousand of photo, portrait, landscape, and even videos! I also have taken various photos for my clients. Now I hope to take pictures of beautiful scenery around the world and use photos to record every unforgettable moments. If my works catch you, feel free to let me know if you are supporting me. Following were my portfolio:</p>
+          </div>
+  
+          <div class="profilePicContainer">
+            <img src="./img/video_page/photographer.svg" alt="stephen" class="profilePic" />
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 
   <!-- video display section: -->
   <section class="vdo-state-photo">
+    <div class="vdo-state-header-container">
+      <h1 class="vdo-state-header">My profile</h1>
+    </div>
     <div class="vdoContainer">
       <img src="./img/video_page/fuji_mount_for_vdo.jpg" alt="Mount Fuji" />
-      <h1 class="vdoTitle">Photographer's Video Channel</h1>
+      <h1 class="vdoTitle">Photographer's beautiful scenery</h1>
       <button class="playbtn">
         <span class="playbtnTitle">
           <img src="./img/video_page/triangle.svg" alt="play_button" />
@@ -62,12 +94,11 @@
   </section>
 
 
-  
   <!-- searchbar and recommand videos section: -->
   <section id="searchRecommand">
     <div class="vdoSearchSort">
       <span class="zoomGlass">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa fa-magnifying-glass"></i>
       </span>
       <input type="search" class="searchBar" placeholder="Search video..." value="" />
   
@@ -99,15 +130,30 @@
     </div>
   </section>
 
+
   <!-- footer: -->
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
 
+      <div class="row">
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
 
-
-
-
-
-
-
+      <div class="row">Copyright © 2022 by Adela, Evan, Victor</div>
+    </div>
+  </footer>
 
 
   <script src="./video.js"></script>

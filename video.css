@@ -7,6 +7,7 @@
 body {
   font-family: monospace;
   font-size: 20px;
+  overflow-x: hidden;
 }
 
 header {
@@ -14,7 +15,7 @@ header {
 }
 
 .page-logo {
-  height: 30rem;
+  height: 10rem;
   background-image: url(./img/video_page/banner.webp);
   background-position: center;
   background-size: cover;
@@ -31,7 +32,7 @@ header {
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
-ul {
+.navbar > ul {
   list-style-type: none;
   overflow: hidden;
   display: flex;
@@ -44,16 +45,16 @@ ul {
   margin-top: 1.5rem;
 }
 
-.dropdown-content li {
+.dropdown-content > li {
   float: left;
 }
 
-ul > li {
+.navbar > ul > li {
   padding-right: 3rem;
   list-style: none;
 }
 
-ul > li > a {
+.navbar > ul > li > a {
   text-decoration: none;
   font-size: 1rem;
   padding: 0.8rem;
@@ -98,6 +99,7 @@ li a,
 li a:hover,
 .dropdown:hover .dropbtn {
   background-color: #b4bda3;
+  border-radius: 10px;
 }
 
 li.dropdown {
@@ -127,9 +129,87 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* ------------------------- */
+
+/* ------------------------- personal Profile: */
+
+.personalProfile {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.personalHeader {
+  width: 100%;
+  margin: 5rem 0 3rem 0;
+
+}
+.personalHeader > h1 {
+  margin: 2rem auto;
+  width: 50%;
+  font-size: 2.7rem;
+  font-family: 'Junge', serif;
+}
 
 
-/* ------------------------- video : */
+.usernameStorage {
+  width: 94%;
+  min-height: 55vh;
+  max-height: 60vh;
+  border-radius: 30px;
+  background-color: #6DA4A1;
+  margin: 0 0 2rem 6rem;
+}
+
+.usernameHeader {
+  width: 50%;
+}
+
+.usernameHeader > h1 {
+  width: 40%;
+  color: white;
+  margin: 1rem 5rem 1rem 15rem;
+  padding-top: 3rem;
+  font-size: 2.4rem;
+  text-align: center;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+.usernameHeader > p {
+  text-align: center;
+  margin: 1rem 0 0 5rem;
+  
+}
+
+.profilePicContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+
+.profilePic {
+  width: 30%;
+  border-radius: 30px;
+  transform: translate(-30%, -90%);
+  transition: .5s ease;
+} 
+
+
+/* ------------------------- video: */
+
+.vdo-state-header-container {
+  width: 100%;
+  margin: 5rem 0 5rem 0;
+}
+.vdo-state-header-container > h1 {
+  width: 30%;
+  font-size: 2.7rem;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Junge', serif;
+}
+
 
 .vdoContainer {
   width: 940px;
@@ -139,6 +219,7 @@ li.dropdown {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
 }
 
@@ -152,16 +233,17 @@ li.dropdown {
 
 .vdoTitle {
   position: absolute;
-  left: 35%;
-  top: 105%;
+  left: 30%;
+  top: 60%;
   color: white;
+  font-family: 'Nothing You Could Do', cursive;
 }
 
 .playbtn {
   position: absolute;
   width: max-content;
   left: 43%;
-  top: 115%;
+  top: 75%;
   background-color: #036f2a;  /* #179029 */
   color: white;
   font-size: 1.2rem;
@@ -171,11 +253,13 @@ li.dropdown {
   justify-content: center;
   align-content: center;
   border: 1px solid #086329;
+  border-radius: 20px;
 
 }
 .playbtn:hover {
   background-color: #086329;  /* #07325C */
   cursor: pointer;
+  border-radius: 100px;
 
 }
 
@@ -192,7 +276,7 @@ li.dropdown {
   margin: 0 0.8rem 0 0;
 }
 
-/* ------------------------- videoSearch : */
+/* ------------------------- videoSearch: */
 
 .vdoSearchSort {
   width: 50vw;
@@ -218,6 +302,7 @@ li.dropdown {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 10rem;
 }
 
 
@@ -226,7 +311,6 @@ li.dropdown {
   height: 10.813rem;
   border-radius: 10px;
   opacity: 1;
-  /* object-fit: cover; */
 }
 
 .recommandContainer > img:hover {
@@ -250,4 +334,210 @@ li.dropdown {
 .layer > img:hover {
   cursor: pointer;
   opacity: 1;
+}
+
+/* ------------------------- */
+
+/* ------------------------- footer section: */
+
+.footer {
+  background: #8eacad;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: white;
+  font-size: 0.8em;
+}
+
+.footer .row > a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.footer .row > a:hover {
+  color: #444;
+}
+
+.footer .row > ul {
+  width: 100%;
+}
+
+.footer .row > ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row > a, i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+
+
+
+/* ------------------------- page responsive: */
+/* ------------------------- page RWD: */
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .usernameStorage {
+    max-height: 65vh;
+  }
+  .profilePic {
+    transform: translate(-30%, -100%);
+  }
+}
+
+/* X-Large devices (large desktops, less than 1312px) */
+@media (max-width: 1311.98px) {
+  .usernameHeader > h1 {
+    width: 60%;
+  }
+  .usernameStorage {
+    max-height: 80vh;
+  }
+  .profilePic {
+    transform: translate(-30%, -100%);
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .usernameHeader > h1 {
+    width: 60%;
+  }
+  .usernameStorage {
+    max-height: 80vh;
+  }
+  .profilePic {
+    width: 35%;
+    transform: translate(-30%, -100%);
+  }
+}
+
+/* Large devices (desktops, less than 1100px) */
+@media (max-width: 1099.98px) {
+  .usernameHeader > h1 {
+    width: 60%;
+  }
+  .usernameHeader > p {
+    font-size: 1.2rem;
+  }
+  .usernameStorage {
+    max-height: 80vh;
+  }
+  .profilePic {
+    width: 35%;
+    transform: translate(-20%, -120%);
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .usernameStorage {
+    margin: 0 0 2rem 0;
+  }
+  .usernameHeader > h1 {
+    width: 60%;
+    font-size: 2.2rem;
+  }
+  .usernameHeader > p {
+    font-size: 1.1rem;
+  }
+  .vdoContainer {
+    /* width: 940px;
+    height: 528.75px; */
+    width: 90%;
+    height: 528.75px;
+
+  }
+}
+
+/* Medium devices (tablets, less than 972px) */
+@media (max-width: 971.98px) {
+  .profilePic {
+    width: 35%;
+    transform: translate(-20%, -100%);
+  }
+  .vdoRecommand {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recommandContainer > img {
+    width: calc(19.187rem*1.5);
+    height: calc(10.813rem*1.5);
+  }
+  .usernameHeader > p {
+    display: none;
+  }
+  .profilePic {
+    width: 35%;
+    transform: translate(-90%, -5%);
+  }
+
+}
+
+/* Medium devices (tablets, less than 800px) */
+@media (max-width: 799.98px) {
+  .usernameHeader > h1 {
+    width: 100%;
+    margin-left: 0;
+  }
+  .usernameHeader > p {
+    display: none;
+  }
+  .usernameStorage {
+    max-height: 90vh;
+  }
+  .profilePic {
+    width: 35%;
+    transform: translate(-90%, -10%);
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .profilePic {
+    width: 35%;
+    transform: translate(-90%, -10%);
+  }
+  .personalHeader > h1, .vdo-state-header-container > h1 {
+    width: 100%;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .profilePic {
+    width: 50%;
+    transform: translate(-50%, -10%);
+  }
 }
