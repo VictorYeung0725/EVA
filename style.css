@@ -5,9 +5,13 @@
 }
 
 body {
-  font-family: monospace;
+  font-family: 'Junge', serif;
   font-size: 20px;
   overflow-x: hidden;
+}
+
+.header {
+  position: relative;
 }
 
 /* --------------- */
@@ -16,15 +20,23 @@ body {
   background: linear-gradient(#6ea4a1 0%, #d0ceca 100%);
 }
 
-.header-bg {
-  height: 22rem;
+header {
+  height: 30rem;
   background-image: url(./img/banner.webp);
   background-position: center;
   background-size: cover;
 }
 
+/* .header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
 .header-bg > * {
   color: #194947;
+  font-size: 32px;
+  font-family: 'Junge', serif;
 }
 
 .slogn {
