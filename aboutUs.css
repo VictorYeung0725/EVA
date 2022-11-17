@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* NavBar */
+
+#navbarNav {
+  margin-left: 1.5rem;
+}
+
+.logo {
+  width: 8rem;
+}
+
+.navbar-brand {
+  margin-right: 0;
+}
+.navbar-brand img {
+  width: 80px;
+}
+@media screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+  .navbar .container-fluid {
+    flex-direction: column;
+  }
+  .navbar .navbar-nav .nav-item {
+    padding: 0.5em 1em;
+  }
+  .navbar-nav {
+    border-bottom: 2px solid #fff;
+  }
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.1em;
+}
+.navbar .navbar-nav {
+  border-top: 2px solid #fff;
+  margin-top: 0.5em;
+}
+
+/* End of NavBar */
+
+/* Header */
+.titlebox {
+  font-family: "Junge", serif;
+  font-size: 2rem;
+  height: 5rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+/* Content part */
+
+.container {
+  height: 50rem;
+  position: relative;
+  background-color: #d9d9d9;
+  margin: 5rem;
+}
+
+.imgbox {
+  position: absolute;
+  z-index: 1;
+  margin-left: 6rem;
+  margin-right: 2rem;
+  top: -5%;
+  left: 10%;
+}
+
+img {
+  width: 100%;
+}
+
+.contentbox {
+  font-family: "Junge", serif;
+  background-color: white;
+  border: solid 6px #6ea4a1;
+  width: 70%;
+  margin: 1rem;
+  padding: 2rem;
+
+  position: absolute;
+  z-index: 3;
+
+  left: -10%;
+  top: 60%;
+}
+
+/* Footer Section */
+.footer {
+  background: #6ea4a1;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .footerrow {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: white;
+  font-size: 0.8em;
+}
+
+.footer .footerrow a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.footer .footerrow a:hover {
+  color: #444;
+}
+
+.footer .footerrow ul {
+  width: 100%;
+}
+
+.footer .footerrow ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .footerrow a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .footerrow ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .footerrow a i {
+    margin: 0% 3%;
+  }
+}
