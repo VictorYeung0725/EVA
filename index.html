@@ -11,46 +11,76 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha384-SOnAn/m2fVJCwnbEYgD4xzrPtvsXdElhOVvR8ND1YjB5nhGNwwf7nBQlhfAwHAZC" crossorigin="anonymous">
+  <!-- another fontawesome icon for footer: -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Google fonts: -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Junge&display=swap" rel="stylesheet">
+
+
   <link rel="stylesheet" type="text/css"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- animate.css -->
+  <!-- animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script src="./index.js" defer></script>
   <title>素人眾籌</title>
 </head>
 
 <body>
   <!-- header start here  -->
   <header>
-    <div class="page-logo">
-      <a href="./index.html">
-        <img src="./img/logo.svg" alt="website-logo">
-      </a>
-    </div>
-    <nav>
-      <ul class="header-right">
-        <li><a href="#">Home</a></li>
+    <nav class="navbar navbar-expand-md navbar-dark" id="nav-background">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto d-none">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
 
-        <!-- dropdown start-->
-        <li class="dropdown">
-          <a href="./Photographer Commmunity.html" class="dropbtn">Portfolio</a>
-        </li>
-        <!-- dropdown end-->
+          <div class="logoContainer">
+            <a href="#"><img class="logo" src="./img/3.png" alt="Logo" /></a>
+          </div>
 
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Crowdsourcing</a></li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-    </nav>
-
-    <section id="hero">
-      <div class="hero-content">
-        <a href="./index.html"><img src="./img/1.svg" alt="logo"></a>
-        <h1>Home</h1>
+          <ul class="navbar-nav mx-auto d-none">
+            <li class="nav-item">
+              <a class="nav-link" href="./PhotographerCommmunity.html">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./video.html"> Profile</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </nav>
+    <div class="header-bg">
+      <div class="slogn">
+        <h3>Travel Photographer Community</h3>
+        <h2>Seeing the World,
+          Through the Eyes of Our Lens</h2>
+      </div>
+    </div>
   </header>
+
+
+
+
+
+
+
 
   <!-- Top 10 Bootstrap 5-->
   <section>
@@ -506,6 +536,32 @@
       <i class="fa-sharp fa-solid fa-arrow-right fa-2xl text-right" id="arrow"><a href="#"></a></i>
     </div>
   </div>
+
+
+  <!-- footer -->
+  <!-- footer: -->
+  <footer>
+    <div class="footer">
+      <div class="footerrow">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="footerrow">
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
+
+      <div class="footerrow">Copyright © 2022 by Adela, Evan, Victor</div>
+    </div>
+  </footer>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script type="text/javascript"
