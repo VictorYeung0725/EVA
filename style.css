@@ -172,6 +172,22 @@ h4 {
 
 /* ------------------------------ */
 
+/* top 10 arrow */
+#arrow-container {
+  position: relative;
+}
+
+#left {
+  position: absolute;
+  top: 41%;
+  left: -10%;
+}
+#right {
+  position: absolute;
+  top: 41%;
+  right: -10%;
+}
+/* top 10 arrow end */
 .photo-container {
   text-align: center;
 }
