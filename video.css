@@ -129,7 +129,6 @@ body {
 
 
 
-
 /* ------------------------- */
 
 /* li a,
@@ -222,6 +221,7 @@ li.dropdown {
 .usernameHeader > p {
   text-align: center;
   margin: 1rem 0 0 5rem;
+  font-size: 1.2rem;
   
 }
 
@@ -229,6 +229,7 @@ li.dropdown {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  position: relative;
   
 }
 
@@ -236,8 +237,9 @@ li.dropdown {
 .profilePic {
   width: 30%;
   border-radius: 30px;
-  transform: translate(-30%, -90%);
+  transform: translate(-30%, -100%);
   transition: .5s ease;
+  position: absolute;
 } 
 
 
@@ -391,6 +393,7 @@ li.dropdown {
   padding: 30px 0px;
   font-family: "Play", sans-serif;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .footer .footerrow {
