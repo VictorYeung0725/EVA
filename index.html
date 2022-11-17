@@ -245,7 +245,8 @@
                 <!-- trigger modal -->
                 <i class="fa-sharp fa-solid fa-comment-dots" data-bs-toggle="modal"
                   data-bs-target="#staticBackdrop"><span class="mx-2">0</span></i>
-                <i class="fa-sharp fa-solid fa-share"></i>
+                <i class="fa-sharp fa-solid fa-share" data-bs-toggle="modal" data-bs-target="#myModel" id="shareBtn"
+                  data-bs-placement="top" title="Click Me!"></i>
                 <i class="fa-sharp fa-solid fa-heart"><span class="mx-2">9</span></i>
               </div>
 
@@ -282,7 +283,8 @@
                 <!-- trigger modal -->
                 <i class="fa-sharp fa-solid fa-comment-dots" data-bs-toggle="modal"
                   data-bs-target="#staticBackdrop"><span class="mx-2">0</span></i>
-                <i class="fa-sharp fa-solid fa-share"></i>
+                <i class="fa-sharp fa-solid fa-share" data-bs-toggle="modal" data-bs-target="#myModel" id="shareBtn"
+                  data-bs-placement="top" title="Click Me!"></i>
                 <i class="fa-sharp fa-solid fa-heart"><span class="mx-2">22</span></i>
               </div>
 
@@ -318,7 +320,8 @@
                 <!-- trigger modal -->
                 <i class="fa-sharp fa-solid fa-comment-dots" data-bs-toggle="modal"
                   data-bs-target="#staticBackdrop"><span class="mx-2">0</span></i>
-                <i class="fa-sharp fa-solid fa-share"></i>
+                <i class="fa-sharp fa-solid fa-share" data-bs-toggle="modal" data-bs-target="#myModel" id="shareBtn"
+                  data-bs-placement="top" title="Click Me!"></i>
                 <i class="fa-sharp fa-solid fa-heart"><span class="mx-2">12</span></i>
               </div>
 
@@ -416,6 +419,54 @@
       </div>
     </div>
     <!-- this is the pop up for comment section end -->
+
+
+    <!-- Share Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary text-uppercase" data-bs-toggle="modal" data-bs-target="#myModel"
+      id="shareBtn" data-bs-placement="top" title="Click Me!">
+      Share
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModel" tabindex="-1" aria-labelledby="myModelLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModelLabel">Share Modal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Share this link via</p>
+            <div class="d-flex align-items-center icons">
+              <a href="https://www.facebook.com/" class="fs-5 d-flex align-items-center justify-content-center">
+                <span class="fab fa-facebook-f"></span>
+              </a>
+              <a href="https://twitter.com/" class="fs-5 d-flex align-items-center justify-content-center">
+                <span class="fab fa-twitter"></span>
+              </a>
+              <a href="https://www.instagram.com/" class="fs-5 d-flex align-items-center justify-content-center">
+                <span class="fab fa-instagram"></span>
+              </a>
+              <a href="#" class="fs-5 d-flex align-items-center justify-content-center">
+                <span class="fab fa-whatsapp"></span>
+              </a>
+              <a href="#" class="fs-5 d-flex align-items-center justify-content-center">
+                <span class="fab fa-telegram-plane"></span>
+              </a>
+            </div>
+            <p>Or copy link</p>
+            <div class="field d-flex align-items-center justify-content-between">
+              <span class="fas fa-link text-center"></span>
+              <input type="text" value="https://victoryeung0725.github.io/EVA/">
+              <button>Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 
 
   </section>
