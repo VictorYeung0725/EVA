@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 
-header {
+/* header {
   position: relative;
 }
 
@@ -83,11 +83,56 @@ header {
   color: #43593a;
   font-size: 3rem;
   font-weight: 500;
+} */
+
+
+/* NavBar */
+#navbarNav {
+  margin-left: 1.5rem;
 }
+
+.logo {
+  width: 8rem;
+}
+
+.navbar-brand {
+  margin-right: 0;
+}
+.navbar-brand img {
+  width: 80px;
+}
+@media screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+  .navbar .container-fluid {
+    flex-direction: column;
+  }
+  .navbar .navbar-nav .nav-item {
+    padding: 0.5em 1em;
+  }
+  .navbar-nav {
+    border-bottom: 2px solid #fff;
+  }
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.1em;
+}
+.navbar .navbar-nav {
+  border-top: 2px solid #fff;
+  margin-top: 0.5em;
+}
+
+
+
+
+
 
 /* ------------------------- */
 
-li a,
+/* li a,
 .dropbtn {
   display: inline-block;
   color: #697961;
@@ -128,7 +173,7 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
+} */
 /* ------------------------- */
 
 /* ------------------------- personal Profile: */
@@ -340,14 +385,15 @@ li.dropdown {
 
 /* ------------------------- footer section: */
 
+/* Footer Section */
 .footer {
-  background: #8eacad;
+  background: #6ea4a1;
   padding: 30px 0px;
   font-family: "Play", sans-serif;
   text-align: center;
 }
 
-.footer .row {
+.footer .footerrow {
   width: 100%;
   margin: 1% 0%;
   padding: 0.6% 0%;
@@ -355,26 +401,26 @@ li.dropdown {
   font-size: 0.8em;
 }
 
-.footer .row > a {
+.footer .footerrow a {
   text-decoration: none;
   color: white;
   transition: 0.5s;
 }
 
-.footer .row > a:hover {
+.footer .footerrow a:hover {
   color: #444;
 }
 
-.footer .row > ul {
+.footer .footerrow ul {
   width: 100%;
 }
 
-.footer .row > ul li {
+.footer .footerrow ul li {
   display: inline-block;
   margin: 0px 30px;
 }
 
-.footer .row > a, i {
+.footer .footerrow a i {
   font-size: 2em;
   margin: 0% 1%;
 }
@@ -384,12 +430,12 @@ li.dropdown {
     text-align: left;
     padding: 5%;
   }
-  .footer .row ul li {
+  .footer .footerrow ul li {
     display: block;
     margin: 10px 0px;
     text-align: left;
   }
-  .footer .row a i {
+  .footer .footerrow a i {
     margin: 0% 3%;
   }
 }
@@ -411,6 +457,13 @@ li.dropdown {
   }
   .profilePic {
     transform: translate(-30%, -100%);
+  }
+}
+
+/* X-Large devices (large desktops, less than 1350px) */
+@media (max-width: 1349.98px) {
+  .hamburger {
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   }
 }
 
