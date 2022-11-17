@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="aboutUs.css" />
     <script defer src="aboutUs.js"></script>
 
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
     <!--FONT AWESOME-->
     <link
       rel="stylesheet"
@@ -15,13 +28,58 @@
     />
 
     <!--GOOGLE FONTS-->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Junge&display=swap"
+      rel="stylesheet"
+    />
     <title>EVA - About Us</title>
   </head>
   <body>
     <!-- Navbar Section -->
-    <nav>
-      <div class="navbar"></div>
+    <nav
+      class="navbar navbar-expand-md navbar-dark"
+      style="background-color: #6ea4a1"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+
+          <div class="logo">
+            <a href="#"
+              ><img class="logo" src="./img/aboutUs/3.png" alt="Logo"
+            /></a>
+          </div>
+
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Profile</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <!-- Content Section -->
@@ -35,43 +93,43 @@
     <div class="container">
       <div class="imgbox">
         <img src="./img/aboutUs/aboutUs.png" alt="teamphoto" />
-      </div>
-
-      <!-- End of imgpart -->
-
-      <div class="contentbox">
-        <p class="engver">
-          EVA is committed to bringing the best local and overseas photography
-          collections to the audience, and also provides exposure opportunities
-          for potential new-generation art talents, so that the field of
-          photography art in Hong Kong can continue to develop in the long run.
-          <br />
-          We rely on everyone's support so that we can continue to provide
-          audiences with high-quality works and services and continue to
-          cultivate more young artists, so as to create a rich, diverse and
-          vibrant cultural scene for Hong Kong.
-        </p>
-        <hr />
-        <p class="chiver">
-          EVA致力為觀眾帶來本地及海外最優質的攝影集，亦為一眾有潛質的新生代藝術人才提供曝光機會，讓香港攝影藝術領域得以長遠持續發展。
-          <br />
-          我們有賴每位的支持，讓我們繼續為觀眾和提供優質的作品及服務，並持續栽培更多年青藝術家，為香港打造一個豐富多元及充滿活力的文化新景象
-        </p>
+        <div class="contentbox">
+          <p class="engver">
+            EVA is committed to bringing the best local and overseas photography
+            collections to the audience, and also provides exposure
+            opportunities for potential new-generation art talents, so that the
+            field of photography art in Hong Kong can continue to develop in the
+            long run.
+            <br />
+            We rely on everyone's support so that we can continue to provide
+            audiences with high-quality works and services and continue to
+            cultivate more young artists, so as to create a rich, diverse and
+            vibrant cultural scene for Hong Kong.
+          </p>
+          <hr />
+          <p class="chiver">
+            EVA致力為觀眾帶來本地及海外最優質的攝影集，亦為一眾有潛質的新生代藝術人才提供曝光機會，讓香港攝影藝術領域得以長遠持續發展。
+            <br />
+            我們有賴每位的支持，讓我們繼續為觀眾和提供優質的作品及服務，並持續栽培更多年青藝術家，為香港打造一個豐富多元及充滿活力的文化新景象
+          </p>
+        </div>
       </div>
     </div>
+
+    <!-- End of imgpart -->
 
     <!-- Footer Section -->
 
     <footer>
       <div class="footer">
-        <div class="row">
+        <div class="footerrow">
           <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-instagram"></i></a>
           <a href="#"><i class="fa fa-youtube"></i></a>
           <a href="#"><i class="fa fa-twitter"></i></a>
         </div>
 
-        <div class="row">
+        <div class="footerrow">
           <ul>
             <li><a href="#">Contact us</a></li>
             <li><a href="#">Our Services</a></li>
@@ -81,7 +139,7 @@
           </ul>
         </div>
 
-        <div class="row">Copyright © 2022 by Adela, Evan, Victor</div>
+        <div class="footerrow">Copyright © 2022 by Adela, Evan, Victor</div>
       </div>
     </footer>
   </body>
