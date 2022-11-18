@@ -172,6 +172,8 @@ h4 {
   width: 16.25rem;
 }
 
+
+
 /* share modal pop up  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -374,4 +376,19 @@ h4 {
   .footer .footerrow a i {
     margin: 0% 3%;
   }
+}
+
+
+/* top10 title */
+.fs-1 {
+  font-family: 'Junge', serif;
+}
+
+/* proposal title */
+.proposalTitle {
+  font-family: 'Junge', serif;
+}
+
+.proposalCard {
+  font-family: 'Junge', serif;
 }
