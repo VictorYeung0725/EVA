@@ -1,136 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS & JavaScript link -->
+    <link rel="stylesheet" href="./aboutUs.css" />
+    <script defer src="./aboutUs.js"></script>
 
-  <link rel="stylesheet" href="./aboutUs.css" />
-  <script defer src="./aboutUs.js"></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <!--FONT AWESOME-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Junge&display=swap"
+      rel="stylesheet"
+    />
 
-  <!--GOOGLE FONTS-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Junge&display=swap" rel="stylesheet" />
+    <!-- Animate.CSS for animation effect: -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-  <!-- Animate.CSS for animation effect: -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Favicon -->
+    <title>About Us - EVA Photorld</title>
+    <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon" />
+  </head>
 
-  <title>EVA - About Us</title>
-</head>
+  <body>
+    <!-- Cursor -->
+    <div class="cursor">
+      <img src="./img/camera.png" alt="" />
+    </div>
 
-<body>
-  <!-- Cursor -->
-  <div class="cursor">
-    <img src="./img/camera.png" alt="" />
-  </div>
+    <!-- Navbar Section -->
+    <nav
+      class="navbar navbar-expand-md navbar-dark"
+      style="background-color: #6ea4a1"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutUs.html">About Us</a>
+            </li>
+          </ul>
 
-  <!-- Navbar Section -->
-  <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #6ea4a1">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./aboutUs.html">About Us</a>
-          </li>
-        </ul>
+          <div class="logo">
+            <a href="./index.html"
+              ><img class="logo" src="./img/3.png" alt="Logo"
+            /></a>
+          </div>
 
-        <div class="logo">
-          <a href="./index.html"><img class="logo" src="./img/3.png" alt="Logo" /></a>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./PhotographerCommmunity.html"
+                >Community</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./video.html"> Profile</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content Section -->
+
+    <div class="titlebox">
+      <!-- Animate.CSS Added Below:-->
+      <header class="animate__animated animate__zoomIn">Our<br />STORY</header>
+    </div>
+
+    <!-- End of Header -->
+
+    <div class="container">
+      <div class="imgbox">
+        <!-- Animate.CSS Added Below:-->
+        <img
+          src="./img/aboutUs/aboutUs.png"
+          alt="teamphoto"
+          class="animate__animated animate__fadeInRight"
+        />
+        <div class="contentbox animate__animated animate__fadeInLeftBig">
+          <p class="engver">
+            EVA is committed to bringing the best local and overseas photography
+            collections to the audience, and also provides exposure
+            opportunities for potential new-generation art talents, so that the
+            field of photography art in Hong Kong can continue to develop in the
+            long run.
+            <br />
+            We rely on everyone's support so that we can continue to provide
+            audiences with high-quality works and services and continue to
+            cultivate more young artists, so as to create a rich, diverse and
+            vibrant cultural scene for Hong Kong.
+          </p>
+          <hr />
+          <p class="chiver">
+            EVA致力為觀眾帶來本地及海外最優質的攝影集，亦為一眾有潛質的新生代藝術人才提供曝光機會，讓香港攝影藝術領域得以長遠持續發展。
+            <br />
+            我們有賴每位的支持，讓我們繼續為觀眾和提供優質的作品及服務，並持續栽培更多年青藝術家，為香港打造一個豐富多元及充滿活力的文化新景象
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of imgpart -->
+
+    <!-- Footer Section -->
+
+    <footer>
+      <div class="footer">
+        <div class="footerrow">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
         </div>
 
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="./PhotographerCommmunity.html">Community</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./video.html"> Profile</a>
-          </li>
-        </ul>
+        <div class="footerrow">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="footerrow">Copyright © 2022 by Adela, Evan, Victor</div>
       </div>
-    </div>
-  </nav>
-
-  <!-- Content Section -->
-
-  <div class="titlebox">
-    <!-- Animate.CSS Added Below:-->
-    <header class="animate__animated animate__zoomIn">Our<br />STORY</header>
-  </div>
-
-  <!-- End of Header -->
-
-  <div class="container">
-    <div class="imgbox">
-      <!-- Animate.CSS Added Below:-->
-      <img src="./img/aboutUs/aboutUs.png" alt="teamphoto" class="animate__animated animate__fadeInRight" />
-      <div class="contentbox animate__animated animate__fadeInLeftBig">
-        <p class="engver">
-          EVA is committed to bringing the best local and overseas photography
-          collections to the audience, and also provides exposure
-          opportunities for potential new-generation art talents, so that the
-          field of photography art in Hong Kong can continue to develop in the
-          long run.
-          <br />
-          We rely on everyone's support so that we can continue to provide
-          audiences with high-quality works and services and continue to
-          cultivate more young artists, so as to create a rich, diverse and
-          vibrant cultural scene for Hong Kong.
-        </p>
-        <hr />
-        <p class="chiver">
-          EVA致力為觀眾帶來本地及海外最優質的攝影集，亦為一眾有潛質的新生代藝術人才提供曝光機會，讓香港攝影藝術領域得以長遠持續發展。
-          <br />
-          我們有賴每位的支持，讓我們繼續為觀眾和提供優質的作品及服務，並持續栽培更多年青藝術家，為香港打造一個豐富多元及充滿活力的文化新景象
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- End of imgpart -->
-
-  <!-- Footer Section -->
-
-  <footer>
-    <div class="footer">
-      <div class="footerrow">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-youtube"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-      </div>
-
-      <div class="footerrow">
-        <ul>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Career</a></li>
-        </ul>
-      </div>
-
-      <div class="footerrow">Copyright © 2022 by Adela, Evan, Victor</div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
