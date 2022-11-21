@@ -246,7 +246,7 @@ li.dropdown {
 .usernameHeader > h1 {
   width: 40%;
   color: white;
-  margin: 1rem 5rem 1rem 15rem;
+  margin: 0rem 5rem 1rem 15rem;
   padding-top: 3rem;
   font-size: 2.4rem;
   text-align: center;
@@ -485,7 +485,9 @@ li.dropdown {
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-
+  .usernameStorage {
+    max-height: 70vh;
+  }
 }
 
 /* X-Large devices (large desktops, less than 1400px) */
@@ -500,15 +502,21 @@ li.dropdown {
 
 /* X-Large devices (large desktops, less than 1350px) */
 @media (max-width: 1349.98px) {
-  .hamburger {
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  .usernameHeader > h1 {
+    width: 60%;
+  }
+  .usernameStorage {
+    max-height: 80vh;
+  }
+  .profilePic {
+    transform: translate(-30%, -100%);
   }
 }
 
-/* X-Large devices (large desktops, less than 1312px) */
-@media (max-width: 1311.98px) {
+/* X-Large devices (large desktops, less than 1314px) */
+@media (max-width: 1313.98px) {
   .usernameHeader > h1 {
-    width: 60%;
+    width: 100%;
   }
   .usernameStorage {
     max-height: 80vh;
@@ -539,13 +547,17 @@ li.dropdown {
   }
   .usernameHeader > p {
     font-size: 1.2rem;
+    width: 100%;
   }
   .usernameStorage {
     max-height: 80vh;
   }
   .profilePic {
     width: 35%;
-    transform: translate(-20%, -120%);
+    transform: translate(-10%, -110%);
+  }
+  .cursor {
+    display: revert;
   }
 }
 
@@ -567,6 +579,9 @@ li.dropdown {
     width: 90%;
     height: 528.75px;
 
+  }
+  .cursor {
+    display: none;
   }
 }
 
@@ -593,6 +608,9 @@ li.dropdown {
     width: 35%;
     transform: translate(-90%, -5%);
   }
+  .cursor {
+    display: none;
+  }
 
 }
 
@@ -612,6 +630,9 @@ li.dropdown {
     width: 35%;
     transform: translate(-90%, -10%);
   }
+  .cursor {
+    display: none;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -623,6 +644,9 @@ li.dropdown {
   .personalHeader > h1, .vdo-state-header-container > h1 {
     width: 100%;
   }
+  .cursor {
+    display: none;
+  }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
@@ -630,5 +654,11 @@ li.dropdown {
   .profilePic {
     width: 50%;
     transform: translate(-50%, -10%);
+  }
+  .playbtn {
+    transform: translate(-35%, -10%);
+  }
+  .cursor {
+    display: none;
   }
 }
