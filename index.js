@@ -57,3 +57,41 @@ window.addEventListener('mousedown', () => {
 window.addEventListener('mouseup', () => {
   mouseCursor.innerHTML = '<img src="./img/camera.png" alt="" />';
 });
+
+// ------------------ postBtn for comment
+
+const postBtn = document.querySelector('#post-comment');
+const commentText = document.querySelector('#textAreaExample');
+let newText;
+let newComment;
+
+const commentbox = document.querySelector('#comment-container');
+console.log(commentbox);
+
+commentText.addEventListener('input', function handleChange(event) {
+  newText = event.target.value;
+  console.log(newText);
+});
+
+postBtn.addEventListener('click', () => {
+  newComment = commentText.value;
+  newComment = newText;
+  console.log(newComment);
+  commentbox.insertAdjacentHTML('afterend', `<div>${newComment}</div>`);
+});
+
+// const message = document.getElementById('message');
+
+// // ✅ GET value of textarea
+// console.log(message.value); // 👉️ ""
+
+// // ✅ SET value of textarea
+// message.value = 'Hello world!';
+
+// // ✅ Append to value of textarea
+// message.value += ' Appended text.';
+
+// // ✅ get value of textarea on change
+// message.addEventListener('input', function handleChange(event) {
+//   console.log(event.target.value);
+// });
