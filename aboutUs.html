@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="aboutUs.css" />
-    <script defer src="aboutUs.js"></script>
+    <!-- CSS & JavaScript link -->
+    <link rel="stylesheet" href="./aboutUs.css" />
+    <script defer src="./aboutUs.js"></script>
 
     <!-- Bootstrap -->
     <link
@@ -34,9 +35,24 @@
       href="https://fonts.googleapis.com/css2?family=Junge&display=swap"
       rel="stylesheet"
     />
-    <title>EVA - About Us</title>
+
+    <!-- Animate.CSS for animation effect: -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Favicon -->
+    <title>About Us - EVA Photorld</title>
+    <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon" />
   </head>
+
   <body>
+    <!-- Cursor -->
+    <div class="cursor">
+      <img src="./img/camera.png" alt="" />
+    </div>
+
     <!-- Navbar Section -->
     <nav
       class="navbar navbar-expand-md navbar-dark"
@@ -57,25 +73,29 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="./aboutUs.html">About Us</a>
             </li>
           </ul>
 
           <div class="logo">
-            <a href="#"
-              ><img class="logo" src="./img/aboutUs/3.png" alt="Logo"
+            <a href="./index.html"
+              ><img class="logo" src="./img/3.png" alt="Logo"
             /></a>
           </div>
 
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Community</a>
+              <a class="nav-link" href="./PhotographerCommmunity.html"
+                >Community</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Profile</a>
+              <a class="nav-link" href="./video.html"> Profile</a>
             </li>
           </ul>
         </div>
@@ -85,15 +105,21 @@
     <!-- Content Section -->
 
     <div class="titlebox">
-      <header>Our<br />STORY</header>
+      <!-- Animate.CSS Added Below:-->
+      <header class="animate__animated animate__zoomIn">Our<br />STORY</header>
     </div>
 
     <!-- End of Header -->
 
     <div class="container">
       <div class="imgbox">
-        <img src="./img/aboutUs/aboutUs.png" alt="teamphoto" />
-        <div class="contentbox">
+        <!-- Animate.CSS Added Below:-->
+        <img
+          src="./img/aboutUs/aboutUs.png"
+          alt="teamphoto"
+          class="animate__animated animate__fadeInRight"
+        />
+        <div class="contentbox animate__animated animate__fadeInLeftBig">
           <p class="engver">
             EVA is committed to bringing the best local and overseas photography
             collections to the audience, and also provides exposure
