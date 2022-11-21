@@ -36,10 +36,6 @@ a:hover {
   cursor: none;
 }
 
-
-
-
-
 /* NavBar */
 
 #navbarNav {
@@ -128,6 +124,52 @@ img {
   top: 60%;
 }
 
+/* iPad ver */
+
+@media (max-width: 821px) {
+  .cursor {
+    display: none;
+  }
+
+  .imgbox {
+    z-index: 0;
+    margin-left: 0;
+    margin-right: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .container {
+    margin-top: 0;
+  }
+
+  .contentbox {
+    width: 100%;
+    margin: 0;
+    position: static;
+    z-index: 0;
+  }
+}
+
+/* Mobile ver */
+
+@media (max-width: 415px) {
+  .cursor {
+    display: none;
+  }
+
+  .container {
+    margin-top: 0;
+  }
+
+  .contentbox {
+    width: 100%;
+    margin: 0;
+    position: static;
+    z-index: 0;
+  }
+}
+
 /* Footer Section */
 .footer {
   background: #6ea4a1;
@@ -167,6 +209,8 @@ img {
   font-size: 2em;
   margin: 0% 1%;
 }
+
+/* Footer Mobile ver */
 
 @media (max-width: 720px) {
   .footer {
