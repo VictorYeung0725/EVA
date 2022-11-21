@@ -9,7 +9,7 @@ body {
   font-family: 'Junge', serif;
   font-size: 20px;
   overflow-x: hidden;
-  /* cursor: none; */
+  cursor: none;
 }
 
 .header {
