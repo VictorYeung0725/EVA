@@ -9,7 +9,7 @@ body {
   font-family: 'Junge', serif;
   font-size: 20px;
   overflow-x: hidden;
-  cursor: none;
+  /* cursor: none; */
 }
 
 .header {
@@ -47,8 +47,6 @@ body {
 a:hover {
   cursor: none;
 }
-
-
 
 /* --------------- */
 #nav-background {
@@ -207,8 +205,6 @@ h4 {
 .photo-card > img {
   width: 16.25rem;
 }
-
-
 
 /* share modal pop up  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -413,7 +409,6 @@ h4 {
     margin: 0% 3%;
   }
 }
-
 
 /* top10 title */
 .fs-1 {
